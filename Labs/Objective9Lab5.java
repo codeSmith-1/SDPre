@@ -23,7 +23,7 @@ public class Objective9Lab5 {
 			printMenu();
 			System.out.print("Which would you like to do? ");
 			choice = kb.nextInt();
-      keepGoing = (choice != 4);
+      // keepGoing = (choice != 4);
 
 			switch (choice) {
       // Part 3:
@@ -44,6 +44,7 @@ public class Objective9Lab5 {
         break;
       case 4:
         System.out.println("You've chosen to quit.");
+        keepGoing = false;
         break;
       default:
         System.out.println("Invalid entry. Please try again");
